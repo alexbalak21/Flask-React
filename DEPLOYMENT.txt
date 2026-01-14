@@ -1,0 +1,9 @@
+Application path
+
+/home/notes-app/ flask/app.py:app
+
+Working directory
+/home/notes-app/
+
+My Flask Application is in  root : /home/notes-app/ 
+flask/app.py
