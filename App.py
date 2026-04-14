@@ -17,5 +17,5 @@ def post_data():
     data = request.get_json()
     print(f"Received data: {data}")
     return {
-        "message": f"Data received: {data['value']}"
+        "message": f"Data received: {data['message']}"
     }
