@@ -16,7 +16,6 @@ def get_data():
 @app.route("/api/data", methods=["POST"])
 def post_data():
     data = request.get_json()
-    print(f"Received data: {data}")
     return {
         "message": f"Data received: {data['message']}"
     }
