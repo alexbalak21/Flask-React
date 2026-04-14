@@ -12,6 +12,7 @@ def serve_index():
 def get_data():
     return {"message": "Hello from the API!"}
 
+# POST DATA
 @app.route("/api/data", methods=["POST"])
 def post_data():
     data = request.get_json()
