@@ -2,6 +2,11 @@ from flask import Flask, send_from_directory, request
 
 app = Flask(__name__, static_folder="frontend", static_url_path="")
 
+# HEALTH CHECK
+@app.route("/api/health")
+def health_check():
+    return {"status": "ok"}
+
 # REACT APP - FRONTEND
 @app.route("/")
 def serve_index():
@@ -19,3 +24,5 @@ def post_data():
     return {
         "message": f"Data received: {data['message']}"
     }
+
+
